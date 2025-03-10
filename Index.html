@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Main container using Flexbox */
+        #box {
+            display: flex; /* Enables flexbox for layout */
+            justify-content: flex-start; /* Aligns items to the left */
+        }
+
+        /* Styles for all direct div children of #box */
+        #box div {
+            width: 250px; /* Fixed width for the divs */
+            height: 600px; /* Fixed height for the divs */
+            background-color: aquamarine; /* Default background color */
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <!-- First section with bisque background -->
+    <div style="background-color: white; width: 500px; height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div style="width: 125px; height: 125px; border-radius: 50%; background-color: rgb(247, 12, 12); background-image: url('https://th.bing.com/th/id/OIP.Xr6nXj6xSLIIxJbiwKwMqAHaK2?rs=1&pid=ImgDetMain'); background-size: cover; background-position: center;"></div>
+        <p style="margin-top: 10px; font-size: 18px; font-weight: bold;">Information Technology</p>
+    </div>
+    
+    
+    
+    <div id="box">
+        <!-- First section with bisque background -->
+        <div style="background-color: rgb(255, 140, 0); width: 250px; height: 600px">
+            <!-- Inner box inside the first section -->
+            <div style="background-color: rgb(222, 229, 86); width: 250px; height: 200px"></div>
+        </div>
+
+        <!-- Second section with an empty paragraph -->
+        <div style="background-color: rgb(92, 6, 252); width: 250px; height: 600px"></div>
+    </div>
+
+</body>
+</html>
