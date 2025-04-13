@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Main container using Flexbox */
+        #box {
+            display: flex; /* Enables flexbox for layout */
+            justify-content: flex-start; /* Aligns items to the left */
+        }
+
+        /* Styles for all direct div children of #box */
+        #box div {
+            width: 300px; /* Fixed width for the divs */
+            height: 600px; /* Fixed height for the divs */
+            background-color: aquamarine; /* Default background color */
+        }
+
+        .container {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <!-- First section with bisque background -->
+    <div style="background-color: white; width: 600px; height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div style="width: 150px; height: 150px; border-radius: 50%; background-color: rgb(247, 12, 12); background-image: url('https://th.bing.com/th/id/OIP.Xr6nXj6xSLIIxJbiwKwMqAHaK2?rs=1&pid=ImgDetMain'); background-size: cover; background-position: center;"></div>
+        <p style="margin-top: 10px; font-size: 18px; font-weight: bold;">Web Technology</p>
+    </div>
+    
+    
+    
+    <div id="box">
+        <!-- First section with bisque background -->
+        <div style="background-color: rgb(255, 140, 0); width: 300px; height: 600px">
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="email">Enter your email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd"><br><br>
+                
+                <label for="cpwd"> Confirm Password:</label><br>
+                <input type="password" id="cpwd" name="cpwd"><br><br>
+
+                
+                <label for="birthday">Date of birth:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+
+                <label for="country">Select your country:</label>
+                <input list="country">
+                <datalist id="country">
+                    <option value="Canada">
+                    <option value="Finland">
+                    <option value="Japan">
+                    <option value="Singapure">
+                    <option value="Thailand">
+                </datalist><br><br>
+
+                
+                <label for="Gender">Select your Gender:</label><br>
+                <input type="radio" id="male" name="Gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="Gender" value="female">
+                <label for="female">Female</label><br>
+
+                <h3>terms and condition</h3>
+                <input type="checkbox" id="tc" name="tc" value="tc">
+                <label for="tc">Agree</label><br>
+                <input type="submit" value="Submit">
+              </form>
+            <!-- Inner box inside the first section -->
+            <div style="background-color: rgb(222, 229, 86); width: 300px; height: 175px">
+                
+            </div>
+        </div>
+
+        <!-- Second section with an empty paragraph -->
+        <div style="background-color: rgb(92, 6, 252); width: 300px; height: 700px"></div>
+    </div>
+
+</body>
+</html>
